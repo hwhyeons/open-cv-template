@@ -1,7 +1,10 @@
 import cv2
 import numpy
 import numpy as np
-
+"""
+아래 방식들은 컬러 이미지를 사용하기 때문에 뚜렷한 이미지가 아니면 오검출 가능성이 높음
+-> 따라서 성능을 높이고 싶다면 그레이 스케일로 변경하여 사용
+"""
 
 def get_match_top_left(big,small,threshold=0.1)\
         -> list[tuple[int,int,int,int]]:
