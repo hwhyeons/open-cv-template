@@ -9,6 +9,7 @@ https://pyimagesearch.com/2015/01/26/multi-scale-template-matching-using-python-
 - 이 코드에서는 임계값을 설정한 적이 없으므로, 백그라운드 이미지에 없는 템플릿 이미지를 매칭을 시도하는 경우 임의의 좌표에 사각형이 그려질 수 있음
 - 임계값을 넘는 것만 draw하려면, cv2.TM_CCOEFF이 cv2.TM_CCOEFF_NORMED가 아니므로(정규화X), result의 maxVal이 2천만 정도 넘는경우로 임계값을 설정해서
     거를 수 있음
+- Canny Edge Detection 사용
 """
 
 
