@@ -3,6 +3,8 @@ import numpy as np
 
 """
 Canny Edge Detection을 이용한 템플릿 매칭
+- matchTemplate방식을 cv2.TM_CCOEFF 대신 cv2.TM_CCOEFF_NORMED를 사용하면 THRESHOLD를 0~1사이로 조정 하기
+
 """
 
 def match_template(background_image_path: str, template_image_path: str):
